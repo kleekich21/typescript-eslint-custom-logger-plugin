@@ -1,5 +1,5 @@
 "use strict";
-import customLoggerPlugin from "eslint-plugin-suggest-custom-logger";
+import customLoggerPlugin from "typescript-eslint-custom-logger-plugin";
 
 export default {
   parser: "@typescript-eslint/parser",
