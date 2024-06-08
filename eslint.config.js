@@ -1,5 +1,6 @@
 "use strict";
-import customLoggerPlugin from "typescript-eslint-custom-logger-plugin";
+// import customLoggerPlugin from "typescript-eslint-custom-logger-plugin"; // TODO: will switch after publish correctely
+import customLoggerPlugin from "./src/eslint-plugin-suggest-custom-logger";
 
 export default {
   parser: "@typescript-eslint/parser",
