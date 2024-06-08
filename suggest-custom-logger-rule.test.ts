@@ -1,5 +1,5 @@
 import { RuleTester } from "@typescript-eslint/rule-tester";
-import suggestCustomLoggerRule from "./suggest-custom-logger-rule";
+import suggestCustomLoggerRule from "./src/rules/suggest-custom-logger-rule";
 
 const ruleTester = new RuleTester({
   parser: "@typescript-eslint/parser",
