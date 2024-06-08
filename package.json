@@ -2,7 +2,7 @@
   "name": "typescript-eslint-custom-logger-plugin",
   "version": "1.0.1",
   "description": "",
-  "main": "eslint-plugin-suggest-custom-logger.ts",
+  "main": "dist/eslint-plugin-suggest-custom-logger.js",
   "type": "module",
   "scripts": {
     "test": "jest"
