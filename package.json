@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "eslint-plugin-suggest-custom-logger.ts",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
@@ -11,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@typescript-eslint/utils": "^7.12.0",
+    "eslint-plugin-custom-logger": "^1.0.0",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {

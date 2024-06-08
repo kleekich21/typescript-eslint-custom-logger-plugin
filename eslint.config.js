@@ -1,5 +1,5 @@
 "use strict";
-import customLoggerPlugin from "eslint-plugin-custom-logger.ts";
+import customLoggerPlugin from "eslint-plugin-suggest-custom-logger";
 
 export default {
   parser: "@typescript-eslint/parser",
@@ -10,7 +10,7 @@ export default {
   plugins: ["@typescript-eslint", customLoggerPlugin],
   rules: {
     "@typescript-eslint/no-unused-vars": "warn",
-    "custom/custom-logger": "warn",
+    "customLoggerPlugin/suggest-custom-logger-rule": "warn",
   },
   settings: {
     "import/resolver": {
@@ -21,7 +21,7 @@ export default {
     {
       files: ["**/*.ts", "**/*.tsx"],
       rules: {
-        "custom/custom-logger": "warn",
+        "customLoggerPlugin/suggest-custom-logger-rule": "warn",
       },
     },
   ],
