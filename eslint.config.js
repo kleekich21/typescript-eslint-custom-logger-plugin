@@ -8,7 +8,7 @@ const typescriptParser = require("@typescript-eslint/parser");
 const typescriptRecomended = require("@typescript-eslint/eslint-plugin");
 const {
   customLoggerPlugin,
-} = require("./dist/eslint-plugin-suggest-custom-logger");
+} = require("typescript-eslint-custom-logger-plugin");
 
 module.exports = [
   {
