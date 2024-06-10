@@ -3,12 +3,12 @@
  * https://eslint.org/docs/latest/use/configure/configuration-files#:~:text=If%20your%20project%20does%20not%20specify%20%22type%22%3A%22module%22%20in%20its%20package.json%20file%2C%20then%20eslint.config.js%20must%20be%20in%20CommonJS%20format
  */
 
-// import customLoggerPlugin from "typescript-eslint-custom-logger-plugin"; // TODO: will switch after publish correctely
 const typescriptParser = require("@typescript-eslint/parser");
 const typescriptRecomended = require("@typescript-eslint/eslint-plugin");
 const {
   customLoggerPlugin,
-} = require("typescript-eslint-custom-logger-plugin");
+} = require("./dist/eslint-plugin-suggest-custom-logger");
+// import { customLoggerPlugin } from "typescript-eslint-custom-logger-plugin"; // TODO: will switch after publish correctely
 
 module.exports = [
   {
