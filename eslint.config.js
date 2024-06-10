@@ -4,30 +4,24 @@
  */
 
 // import customLoggerPlugin from "typescript-eslint-custom-logger-plugin"; // TODO: will switch after publish correctely
-const customLoggerPlugin = require("./dist/eslint-plugin-suggest-custom-logger");
+const typescriptParser = require("@typescript-eslint/parser");
+const typescriptRecomended = require("@typescript-eslint/eslint-plugin");
+const {
+  customLoggerPlugin,
+} = require("./dist/eslint-plugin-suggest-custom-logger");
 
-module.exports = {
-  parser: "@typescript-eslint/parser",
-  languageOptions: {
-    sourceType: "module",
-  },
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  plugins: ["@typescript-eslint", customLoggerPlugin],
-  rules: {
-    "@typescript-eslint/no-unused-vars": "warn",
-    "customLoggerPlugin/suggest-custom-logger-rule": "warn",
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {},
+module.exports = [
+  {
+    files: ["*.ts", "*.tsx"],
+    languageOptions: {
+      parser: typescriptParser,
+      ecmaVersion: 2020,
+      sourceType: "module",
+    },
+    plugins: { typescriptRecomended, customLoggerPlugin },
+
+    rules: {
+      "customLoggerPlugin/suggest-custom-logger-rule": "warn",
     },
   },
-  overrides: [
-    {
-      files: ["**/*.ts", "**/*.tsx"],
-      rules: {
-        "customLoggerPlugin/suggest-custom-logger-rule": "warn",
-      },
-    },
-  ],
-};
+];
