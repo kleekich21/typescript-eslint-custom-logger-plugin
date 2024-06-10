@@ -1,8 +1,12 @@
 "use strict";
-// import customLoggerPlugin from "typescript-eslint-custom-logger-plugin"; // TODO: will switch after publish correctely
-import customLoggerPlugin from "./src/eslint-plugin-suggest-custom-logger";
+/** If your project does not specify "type":"module" in its package.json file, then eslint.config.js must be in CommonJS format
+ * https://eslint.org/docs/latest/use/configure/configuration-files#:~:text=If%20your%20project%20does%20not%20specify%20%22type%22%3A%22module%22%20in%20its%20package.json%20file%2C%20then%20eslint.config.js%20must%20be%20in%20CommonJS%20format
+ */
 
-export default {
+// import customLoggerPlugin from "typescript-eslint-custom-logger-plugin"; // TODO: will switch after publish correctely
+const customLoggerPlugin = require("./dist/eslint-plugin-suggest-custom-logger");
+
+module.exports = {
   parser: "@typescript-eslint/parser",
   languageOptions: {
     sourceType: "module",
