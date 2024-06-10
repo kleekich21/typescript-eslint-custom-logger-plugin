@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "tsc -b",
-    "eslint": "npx eslint"
+    "eslint": "npx eslint example.ts"
   },
   "keywords": [],
   "author": "",
