@@ -12,6 +12,12 @@ const {
   customLoggerPlugin,
 } = require("typescript-eslint-custom-logger-plugin"); // TODO: will switch after publish correctely
 
+/* TODO: 4 lines of code will be removed */
+const what = require("./dist/eslint-plugin-suggest-custom-logger");
+const what2 = require("typescript-eslint-custom-logger-plugin");
+console.log("what: ", what);
+console.log("what2: ", what2);
+
 module.exports = [
   {
     files: ["*.ts", "*.tsx"],
