@@ -1,6 +1,6 @@
 {
   "name": "typescript-eslint-custom-logger-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/eslint-plugin-suggest-custom-logger.js",
   "scripts": {
