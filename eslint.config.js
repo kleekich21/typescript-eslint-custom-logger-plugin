@@ -5,10 +5,12 @@
 
 const typescriptParser = require("@typescript-eslint/parser");
 const typescriptRecomended = require("@typescript-eslint/eslint-plugin");
+// const {
+//   customLoggerPlugin,
+// } = require("./dist/eslint-plugin-suggest-custom-logger");
 const {
   customLoggerPlugin,
-} = require("./dist/eslint-plugin-suggest-custom-logger");
-// import { customLoggerPlugin } from "typescript-eslint-custom-logger-plugin"; // TODO: will switch after publish correctely
+} = require("typescript-eslint-custom-logger-plugin"); // TODO: will switch after publish correctely
 
 module.exports = [
   {
